@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rqd-2A-mQg">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodNavigatorTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f0j-aB-jll">
+                                <rect key="frame" x="0.0" y="105" width="375" height="540"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="zKI-zS-myg" rowHeight="98" style="IBUITableViewCellStyleDefault" id="Onm-cZ-BID">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Onm-cZ-BID" id="KXk-BF-QJF">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="98"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="SnackName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zKI-zS-myg">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="98"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Recent Selected :" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zmf-b7-vHr">
+                                <rect key="frame" x="20" y="57" width="149" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="HRn-mW-rOw"/>
+                                    <constraint firstAttribute="width" constant="149" id="luY-i4-ivG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFx-AU-765">
+                                <rect key="frame" x="184" y="56" width="181" height="39"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="i1G-SI-Zwx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eFx-AU-765" secondAttribute="trailing" constant="10" id="350-MP-NTO"/>
+                            <constraint firstItem="f0j-aB-jll" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4WB-da-IPU"/>
+                            <constraint firstItem="eFx-AU-765" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Eie-PU-bn8"/>
+                            <constraint firstItem="f0j-aB-jll" firstAttribute="top" secondItem="eFx-AU-765" secondAttribute="bottom" constant="10" id="Ogo-gN-uMU"/>
+                            <constraint firstItem="f0j-aB-jll" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XXV-w9-u3j"/>
+                            <constraint firstAttribute="bottom" secondItem="f0j-aB-jll" secondAttribute="bottom" constant="22" id="ifP-4S-XSA"/>
+                            <constraint firstItem="Zmf-b7-vHr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="13" id="uCg-CI-Lp0"/>
+                            <constraint firstItem="eFx-AU-765" firstAttribute="leading" secondItem="Zmf-b7-vHr" secondAttribute="trailing" constant="15" id="vH4-dh-5K7"/>
+                            <constraint firstItem="Zmf-b7-vHr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="z6W-LW-NvI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="e7v-Li-dTo"/>
+                    <connections>
+                        <outlet property="foodView" destination="f0j-aB-jll" id="fUI-5L-cXG"/>
+                        <outlet property="passedDataLabel" destination="eFx-AU-765" id="9tv-43-Ovj"/>
+                        <outlet property="selectedOrderTextField" destination="Zmf-b7-vHr" id="V4R-cl-5fe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602.89855072463774" y="137.94642857142856"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="2DD-cR-ObH">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="ki5-JK-Hgz" customClass="SecondViewController" customModule="FoodNavigatorTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xvy-cr-RtP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D3P-pu-6FA">
+                                <rect key="frame" x="121" y="442" width="131" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4s9-UV-CxB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Select">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectBtnAction" destination="ki5-JK-Hgz" eventType="touchUpInside" id="0oQ-Uw-fq9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="snack/lunch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suh-zD-yrf">
+                                <rect key="frame" x="99" y="194" width="176" height="38"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="VAo-aC-WXn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="food name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqK-0Z-9wi">
+                                <rect key="frame" x="99" y="273" width="176" height="39"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hotel name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-fv-jy0">
+                                <rect key="frame" x="99" y="349" width="176" height="38"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8a5-dU-uVF"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="VgU-fv-jy0" firstAttribute="height" secondItem="rqK-0Z-9wi" secondAttribute="height" multiplier="0.974359" id="3mF-d0-fH3"/>
+                            <constraint firstItem="VgU-fv-jy0" firstAttribute="top" secondItem="rqK-0Z-9wi" secondAttribute="bottom" constant="37" id="A6K-5m-thR"/>
+                            <constraint firstItem="8a5-dU-uVF" firstAttribute="trailing" secondItem="D3P-pu-6FA" secondAttribute="trailing" constant="123" id="PMS-eC-2Yj"/>
+                            <constraint firstItem="suh-zD-yrf" firstAttribute="leading" secondItem="8a5-dU-uVF" secondAttribute="leading" constant="99" id="RS2-qH-fKU"/>
+                            <constraint firstItem="suh-zD-yrf" firstAttribute="top" secondItem="8a5-dU-uVF" secondAttribute="top" constant="194" id="YP4-3f-lTw"/>
+                            <constraint firstItem="8a5-dU-uVF" firstAttribute="trailing" secondItem="VgU-fv-jy0" secondAttribute="trailing" constant="100" id="d46-Mh-Nzh"/>
+                            <constraint firstItem="8a5-dU-uVF" firstAttribute="trailing" secondItem="suh-zD-yrf" secondAttribute="trailing" constant="100" id="dLV-5M-kqF"/>
+                            <constraint firstItem="D3P-pu-6FA" firstAttribute="leading" secondItem="8a5-dU-uVF" secondAttribute="leading" constant="121" id="eaZ-Xk-dCi"/>
+                            <constraint firstItem="rqK-0Z-9wi" firstAttribute="leading" secondItem="8a5-dU-uVF" secondAttribute="leading" constant="99" id="gKh-yV-3Cv"/>
+                            <constraint firstItem="8a5-dU-uVF" firstAttribute="trailing" secondItem="rqK-0Z-9wi" secondAttribute="trailing" constant="100" id="kc1-dD-H2S"/>
+                            <constraint firstItem="VgU-fv-jy0" firstAttribute="leading" secondItem="8a5-dU-uVF" secondAttribute="leading" constant="99" id="laM-jP-gxt"/>
+                            <constraint firstItem="rqK-0Z-9wi" firstAttribute="height" secondItem="suh-zD-yrf" secondAttribute="height" multiplier="1.02632" id="mvh-GR-ER5"/>
+                            <constraint firstItem="rqK-0Z-9wi" firstAttribute="top" secondItem="suh-zD-yrf" secondAttribute="bottom" constant="41" id="wJq-Wb-8Bd"/>
+                            <constraint firstItem="D3P-pu-6FA" firstAttribute="top" secondItem="VgU-fv-jy0" secondAttribute="bottom" constant="55" id="y1M-aj-Fed"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HotelNameLabel" destination="VgU-fv-jy0" id="Mgr-YT-eoQ"/>
+                        <outlet property="foodNameLabel" destination="rqK-0Z-9wi" id="lMu-vK-f5A"/>
+                        <outlet property="typeLabel" destination="suh-zD-yrf" id="KnG-Wa-g2I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XeQ-NI-U9M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1340" y="137.18140929535232"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UTC-ll-nTh">
+            <objects>
+                <navigationController id="rqd-2A-mQg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QoT-Uc-Caw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="RYs-OV-HrI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q6m-uR-FHv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-223" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
